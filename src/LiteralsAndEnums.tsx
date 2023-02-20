@@ -1,7 +1,7 @@
 import React from "react";
 
 //Literal Type
-
+// you just constain your code to specific input
 function LiteralsAndEnums() {
   const flipCoin = (): "Head" | "Tail" =>
     Math.random() < 0.5 ? "Head" : "Tail";
