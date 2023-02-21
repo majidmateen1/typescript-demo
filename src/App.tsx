@@ -25,10 +25,6 @@ function App() {
         <Route path="/AnyAndUnknown" element={<AnyAndUnknown />} />
         {/* 7 */}
         <Route path="/InterFacesAndTypes" element={<InterFacesAndTypes />} />
-        {/* 8 */}
-        {/* 9 */}
-        {/* 10 */}
-        {/* 11 */}
       </Routes>
     </BrowserRouter>
   );

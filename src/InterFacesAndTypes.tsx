@@ -139,7 +139,52 @@ function InterFacesAndTypes() {
     }
   };
 
-  return <div>InterFaces And Types or Union And Intersection</div>;
+  // Never Type
+  // The never type contains no value.
+  // The never type represents the return type of a function that always throws an error or a function that contains an indefinite loop.
+  function raiseError(message: string): never {
+    throw new Error(message);
+  }
+
+  function reject() {
+    return raiseError("Rejected");
+  }
+
+  let loop = function forever() {
+    while (true) {
+      console.log("Hello");
+    }
+  };
+
+  // An intersection type creates a new type by combining multiple existing types. The new type has all features of the existing types.
+
+  // To combine types, you use the & operator as follows:
+
+  // type typeAB = typeA & typeB;
+
+  // Suppose that you have three interfaces: BusinessPartner, Identity, and Contact.
+
+  interface BusinessPartner {
+    name: string;
+    credit: number;
+  }
+
+  interface Identity {
+    id: number;
+    name: string;
+  }
+
+  interface Contact {
+    email: string;
+    phone: string;
+  }
+  // Code language: TypeScript (typescript)
+  // The following defines two intersection types:
+
+  type Employee = Identity & Contact;
+  type Customer = BusinessPartner & Contact;
+
+  return <div>InterFaces & Types, Union & Intersection or Never type</div>;
 }
 
 export default InterFacesAndTypes;
