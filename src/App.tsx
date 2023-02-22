@@ -8,6 +8,7 @@ import ArraysAndTuples from "./ArraysAndTuples";
 import LiteralsAndEnums from "./LiteralsAndEnums";
 import NullvoidAndUndefined from "./NullvoidAndUndefined";
 import AnyAndUnknown from "./AnyAndUnknown";
+import InterFacesAndTypes from "./InterFacesAndTypes";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           element={<NullvoidAndUndefined />}
         />
         <Route path="/AnyAndUnknown" element={<AnyAndUnknown />} />
+        {/* 7 */}
+        <Route path="/InterFacesAndTypes" element={<InterFacesAndTypes />} />
       </Routes>
     </BrowserRouter>
   );
