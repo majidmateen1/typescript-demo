@@ -18,7 +18,13 @@ function AnyAndUnknown() {
       console.log(something);
     }
   };
+
   logger2("hello typescript");
+
+  // const logger2 = (something: unknown): void => {
+  //   console.log(something.toUpperCase());
+  // };
+
   return <div>AnyAndUnknown</div>;
 }
 

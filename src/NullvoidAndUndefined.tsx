@@ -2,7 +2,7 @@ import React from "react";
 
 function NullvoidAndUndefined() {
   //void type
-  const names = (name: string) => void console.log("name :", name);
+  const names = (name: string): void => console.log("name :", name);
   names("ali");
 
   //null type

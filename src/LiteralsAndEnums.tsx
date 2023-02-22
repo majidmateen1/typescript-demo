@@ -7,7 +7,7 @@ function LiteralsAndEnums() {
     Math.random() < 0.5 ? "Head" : "Tail";
   console.log("flipCoin", flipCoin());
 
-  //somthing pre defined and fixed set of values  or predefined sets
+  //somthing pre defined and fixed set of values  or predefined sets used such as in SDK's
 
   //IT DOES NOT CROSS YOUR CODE BOUNDRY
 
