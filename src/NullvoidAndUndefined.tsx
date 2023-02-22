@@ -14,7 +14,7 @@ function NullvoidAndUndefined() {
 
   //undefined
 
-  const name = (name?: string | undefined) => console.log("name :", name);
+  const name = (name?: string) => console.log("name :", name);
 
   name();
 
